@@ -1,0 +1,179 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    margin: 0;
+    background-color: #000C09;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section {
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hero-title {
+    position: relative;
+}
+
+.deco {
+    position: absolute;
+}
+
+.hero-deco {
+    height: 120px;
+    width: auto;
+    top:-32px;
+    right: 132px;
+
+}
+
+.hero-title h1 {
+    font-size: 64px;
+    margin-bottom: 24px;
+    z-index: 2;
+    position: relative;
+}
+
+h1, h2, h3, h4 , h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.hero-wrapper {
+    height: 100vh;
+}
+
+.hero-container {
+    /*max-width: 300px;*/
+}
+
+.hero-text {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.center-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.title-deco {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    align-self: center;
+    margin-top: 16px;
+}
+
+.title-deco > * {
+    z-index: 2;
+    position: relative;
+}
+
+.title-deco::before{
+    display: block;
+    content: '';
+    background-image: url("../img/circle_svg.svg");
+    min-height: 100px;
+    min-width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    transform: rotateZ(45deg);
+}
+
+
+.title-deco.small::before {
+    min-height: 90px;
+    min-width: 90px;
+    top: -17px;
+    transform: rotateZ(-26deg);
+    left: -11px;
+}
+
+
+.work-container {
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.work-item {
+    max-width: 450px;
+    background-color: white;
+    color: black;
+    padding: 48px;
+    font-size: 18px;
+    box-shadow: -10px 17px 0 4px hsla(166.53061224489795, 72.41%, 60.20%, 1.00);
+}
+
+.team-item {
+    text-align: center;
+}
+
+.team-name {
+    margin-bottom: 8px;
+}
+
+.team-avatar {
+    position: relative;
+    display: inline-block;
+}
+
+.team-avatar::before {
+    display: block;
+    content: '';
+    background-image: url("../img/circle_svg.svg");
+    min-height: 200px;
+    min-width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+}
+
+.team-avatar > img {
+    height: 200px;
+    width: 200px;
+}
+
+footer {
+    margin-top: 96px;
+    background-color: #50E3C2;
+    padding: 80px;
+}
+
+.footer-brand-container {
+    color: black;
+}
+
+.footer-brand-title {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
