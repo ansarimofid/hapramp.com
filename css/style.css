@@ -25,6 +25,14 @@ body {
     text-align: center;
 }
 
+.text-left {
+    text-align: left;
+}
+
+.text-black {
+    color: black;
+}
+
 .hero-title {
     position: relative;
 }
@@ -240,6 +248,12 @@ footer {
     font-size: 60px;
     text-transform: uppercase;
     margin-bottom: 8px;
+    margin-top: 0;
+    line-height: 1;
+}
+
+.associates h3{
+    margin-top: 0;
 }
 
 .footer-container {
@@ -259,6 +273,10 @@ footer {
 
     .work-item.w2 {
         grid-column: 2/3;
+    }
+
+    .footer-deco {
+        display: none;
     }
 }
 
@@ -313,9 +331,23 @@ footer {
     .section.team-section {
         margin-top: 100px;
     }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 40px;
+    }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+    footer {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 430px) {
     .hero-title h1 {
         font-size: 48px;
     }
