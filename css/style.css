@@ -229,9 +229,26 @@ h1, h2, h3, h4 , h5 {
     z-index: 1;
 }
 
+.team-item.t2 .team-avatar::before {
+    transform: rotateZ(45deg);
+}
+
+.team-item.t3 .team-avatar::before {
+    transform: rotateZ(90deg);
+}
+
+.team-item.t1 .team-avatar::before {
+    transform: rotateZ(135deg);
+}
+
+.team-item.t5 .team-avatar::before {
+    transform: rotateZ(180deg);
+}
+
 .team-avatar > img {
     height: 200px;
     width: 200px;
+    border-radius: 50%;
 }
 
 footer {
